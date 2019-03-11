@@ -5,7 +5,7 @@
 from __future__ import print_function
 import sys
 
-sys.path.append('/home/vchaska1/protobuf/protobuf-3.5.1/python')
+sys.path.append('/home/yaoliu/src_code/protobuf-3.7.0/python')
 import addressbook_pb2
 
 

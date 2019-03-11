@@ -15,7 +15,7 @@ These examples are part of the Protocol Buffers tutorial, located at:
 
 ## Running protobuf on BU remote.cs machines
 
-We'll be using Protocol Buffers 3.5.1 in this course. It is already installed in my home
+We'll be using Protocol Buffers 3.7.0 in this course. It is already installed in my home
 directory. This installation includes the protocol compiler (the protoc binary)
 and the protobuf runtime for the 3 languages that we use - C++, Java and Python.
 Let me know ASAP if you face any issues with running this on remote.
@@ -25,14 +25,14 @@ _Note: Please read the Protocol Buffers tutorial on above link to get better ide
 Similar to Apache Thrift, you need to specify environment variables at compile and runtime.
 * Protobuf binary:
 ```bash
-export PATH=/home/vchaska1/protobuf/bin:$PATH
+export PATH=/home/yaoliu/src_code/local/bin:$PATH
 ```
 The protocol compiler (protoc) binary is present at this location. It is required to
 generate code from .proto files.
 
 * Protobuf package configuration file:
 ```bash
-export PKG_CONFIG_PATH=/home/vchaska1/protobuf/lib/pkgconfig
+export PKG_CONFIG_PATH=/home/yaoliu/src_code/local/lib/pkgconfig
 ```
 
 
@@ -40,7 +40,7 @@ export PKG_CONFIG_PATH=/home/vchaska1/protobuf/lib/pkgconfig
 
 First, add the C++ runtime libraries to LD_LIBRARY_PATH variable.
 ```bash
-export LD_LIBRARY_PATH=/home/vchaska1/protobuf/lib
+export LD_LIBRARY_PATH=/home/yaoliu/src_code/local/lib
 ```
 
 Then run "make cpp" in this directory to build the C++ example. It
@@ -58,7 +58,7 @@ To run the examples:
 Add the following two lines at the beginning of your Python code.
 ```python
 import sys
-sys.path.append('/home/vchaska1/protobuf/protobuf-3.5.1/python')
+sys.path.append('/home/yaoliu/src_code/protobuf-3.7.0/python')
 ```
 (This should be already present in python files of this repo)
 
@@ -78,7 +78,7 @@ To run the examples:
 Set the following CLASSPATH environment variable for runtime protobuf class
 discovery:
 ```bash
-export CLASSPATH=/home/vchaska1/protobuf/protobuf-java-3.5.1.jar
+export CLASSPATH=/home/yaoliu/src_code/protobuf-java-3.7.0.jar
 ```
 
 Then run "make java". This will create the add_person_java/list_people_java
