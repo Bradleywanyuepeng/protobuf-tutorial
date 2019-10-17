@@ -43,7 +43,11 @@ First, add the C++ runtime libraries to LD_LIBRARY_PATH variable.
 export LD_LIBRARY_PATH=/home/yaoliu/src_code/local/lib
 ```
 
-Then run "make cpp" in this directory to build the C++ example. It
+Then run 
+```bash
+make cpp
+```
+in this directory to build the C++ example. It
 will create two executables: add_person_cpp and list_people_cpp. These programs
 simply take an address book file as their parameter. The add_person_cpp
 programs will create the file if it doesn't already exist.
@@ -64,7 +68,11 @@ sys.path.append('/home/yaoliu/src_code/protobuf-3.7.0/python')
 
 Make sure to add these lines before any protobuf related imports.
 
-Then run "make python" to build two executables (shell scripts actually):
+Then run 
+```bash
+make python
+```
+to build two executables (shell scripts actually):
 add_person_python and list_people_python. They work the same way as the
 C++ executables.
 
@@ -81,12 +89,16 @@ discovery:
 export CLASSPATH=/home/yaoliu/src_code/protobuf-java-3.7.0.jar
 ```
 
-Then run "make java". This will create the add_person_java/list_people_java
+Then run 
+```bash
+make java
+```
+This will create the add_person_java/list_people_java
 executables (shell scripts) and can be used to create/display an address book
 data file.
 
 To run the examples:
-
+ 
     $ ./add_person_java addressbook.data
     $ ./list_people_java addressbook.data
 
@@ -97,4 +109,3 @@ versa.
 
 ---
 
-_Note: You can also install protobuf on your own machine and do the development work there. I personally found it easier. Please see the official website for instructions on this. HOWEVER, please make sure that your code compiles and works correctly on remote.cs machines before submitting._
